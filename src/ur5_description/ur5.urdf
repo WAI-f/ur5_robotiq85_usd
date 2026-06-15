@@ -206,7 +206,7 @@
       <inertia ixx="0.017136473145408" ixy="0.0" ixz="0.0" iyy="0.017136473145408" iyz="0.0" izz="0.033822"/>
     </inertial>
   </link>
-  <joint name="ee_fixed_joint" type="fixed">
+  <!-- <joint name="ee_fixed_joint" type="fixed">
     <parent link="wrist_3_link"/>
     <child link="ee_link"/>
     <origin rpy="0.0 0.0 1.5707963267948966" xyz="0.0 0.0823 0.0"/>
@@ -218,7 +218,7 @@
       </geometry>
       <origin rpy="0 0 0" xyz="-0.01 0 0"/>
     </collision>
-  </link>
+  </link> -->
   <!-- ROS base_link to UR 'Base' Coordinates transform -->
   <link name="base"/>
   <joint name="base_link-base_fixed_joint" type="fixed">
