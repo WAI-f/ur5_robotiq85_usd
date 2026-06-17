@@ -7,6 +7,7 @@ def parse_args():
 
     parser.add_argument("--usd", 
                         type=str,
+                        required=True,
                         help="usd file full path"
     )
 
@@ -34,7 +35,12 @@ import carb
 import omni.usd
 from isaacsim.core.api import World
 from isaacsim.core.utils.stage import is_stage_loading, open_stage
+from isaacsim.core.utils.extensions import enable_extension
+
 import os
+
+enable_extension("isaacsim.ros2.bridge")
+simulation_app.update()
 
 def wait_for_stage():
     while is_stage_loading():
