@@ -5,12 +5,31 @@
 - isaacsim 5.1
 
 ### isaacsim import urdf
+1. 打开import窗口
+![import window](./pic/import_urdf.png)
 
+2. import robotiq设置
+![import robotiq](./pic/import_robotiq.png)
+
+3. import ur设置
+![import ur](./pic/import_ur.png)
 
 ### ur5 & robotiq85 connection
-
+1. 本仓库参考[Tutorial 6: Setup a Manipulator](https://docs.isaacsim.omniverse.nvidia.com/5.1.0/robot_setup_tutorials/tutorial_import_assemble_manipulator.html)的option1实现夹爪与机械臂的连接
 
 ### make scene
+1. 添加地面
+![add ground](./pic/add_ground.png)
+
+2. 设置光源
+![set light](./pic/set_light.png)
+
+3. 设置action graph
+- 打开设置窗口
+![open graph action window](./pic/add_action_graph.png)
+
+- 设置参数
+![set action graph](./pic/action_graph_setting.png)
 
 
 ### launch simulation by python script
@@ -48,5 +67,4 @@ xacro ur5_standalone.urdf.xacro > ur5.urdf # export ur5 urdf
 ### 参考
 1. isaac sim官方教程：[Tutorial 6: Setup a Manipulator](https://docs.isaacsim.omniverse.nvidia.com/5.1.0/robot_setup_tutorials/tutorial_import_assemble_manipulator.html)
 
-2. URDF代码仓库：[ur5_robotiq85_description
-](git@github.com:WAI-f/ur5_robotiq85_description.git)
+2. URDF代码仓库：[ur5_robotiq85_description](https://github.com/WAI-f/ur5_robotiq85_description)
