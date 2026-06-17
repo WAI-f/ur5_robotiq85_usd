@@ -67,4 +67,4 @@ xacro ur5_standalone.urdf.xacro > ur5.urdf # export ur5 urdf
 ### 参考
 1. isaac sim官方教程：[Tutorial 6: Setup a Manipulator](https://docs.isaacsim.omniverse.nvidia.com/5.1.0/robot_setup_tutorials/tutorial_import_assemble_manipulator.html)
 
-2. URDF代码仓库：[ur5_robotiq85_description](https://github.com/WAI-f/ur5_robotiq85_description)
+2. URDF代码仓库：[ur5_robotiq85_description](https://github.com/WAI-f/ur5_robotiq85_description/tree/v0.0.1)
