@@ -69,7 +69,7 @@ if __name__ == "__main__":
         step_count = 0
         run_forever = args.steps <= 0
         while simulation_app.is_running() and (run_forever or step_count < args.steps):
-            world.step(render=True)
+            world.step(render=not args.headless)
             step_count += 1
     finally:
         simulation_app.close()
